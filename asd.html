@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="asd.css">
+    <script type="text/javascript" src="swf2js-master/swf2js.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrapContent">
+        <div class="Content">
+        
+        </div>
+        <div class="Title">
+            <img src="fore.png" id='imageBubble' alt="">
+        </div>
+
+        <div class=" Char Top1  ">
+           <div class="body">
+            <img src="Top1/cloth.png" alt="" class="cloth">
+            <div class="head">
+                <img src="Top1/face.png" alt="" class="face">
+                <img src="Top1/Glass.png" alt="" class="glass">
+                <img src="Top1/Hair.png" alt="" class="hair">
+                <img src="Top1/Hat.png" alt="" class="hat">
+            </div>
+            <div class="back">
+                <object class='swf swfcircle' width="500" height="400">
+                    <param name="movie" value="top1/circle.swf">
+                    <param name="wmode" value="transparent">
+                    <embed src="top1/circle.swf" width="100" height="100">
+                    </embed>
+                </object>
+                <div class="circle d-none">
+                    <img class='xoay circleOut'src="top1/Image/image1.png" alt="">
+                    <img class='xoay circleIn'src="top1/Image/image4.png" alt="">
+                </div>
+            </div>
+            <object class='swf' width="400" height="300">
+                <param name="movie" value="top1/wing.swf">
+                <param class = "test" >
+                <embed src="top1/wing.swf" width="100" height="100">
+                </embed>
+            </object>
+           </div>
+        
+        </div>
+      
+      
+        <div class=" Char Top2 ">
+            <div class="body">
+             <img src="Top2/cloth.png" alt="" class="cloth">
+             <div class="head">
+                 <img src="Top2/face.png" alt="" class="face">
+                 <img src="Top2/Glass.png" alt="" class="glass">
+                 <img src="Top2/Hair.png" alt="" class="hair">
+                 <img src="Top2/Hat.png" alt="" class="hat">
+             </div>
+             <div class="back">
+                <div class="circle">
+                    <img class='xoay circleOut'src="top2/Image/image1.png" alt="">
+                    <img class='xoay circleIn'src="top2/Image/image4.png" alt="">
+                </div>
+            </div>
+            <object class='swf' width="400" height="300">
+                <param name="movie" value="top2/wing.swf">
+                <param name="wmode" value="transparent">
+                <embed src="top2/wing.swf" width="100" height="100">
+                </embed>
+            </object>
+            </div>
+           
+         </div>
+   
+      
+         <div class=" Char Top3 ">
+            <div class="body">
+             <img src="Top3/cloth.png" alt="" class="cloth">
+             <div class="head">
+                 <img src="Top3/face.png" alt="" class="face">
+                 <img src="Top3/Glass.png" alt="" class="glass">
+                 <img src="Top3/Hair.png" alt="" class="hair">
+                 <img src="Top3/Hat.png" alt="" class="hat">
+             </div>
+             <div class="back">
+                <div class="circle">
+                    <img class='xoay circleOut'src="top3/Image/image1.png" alt="">
+                    <img class='xoay circleIn'src="top3/Image/image4.png" alt="">
+                </div>
+
+            </div>
+            <object class='swf swftop3' width="400" height="300">
+                <param name="movie" value="top3/wing.swf">
+                <param name="wmode" value="transparent">
+                <embed src="top3/wing.swf" width="100" height="100">
+                </embed>
+            </object>
+            </div>
+         </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            var circle = document.getElementsByClassName('xoay')
+            let deg = -360;
+            let _deg = 360
+            let num = 360
+            function xoayCircle(){
+                circle[0].style.transform       = 'rotate('+deg+'deg) '; 
+                circle[0].style.mozTransform    = 'rotate('+deg+'deg)'; 
+                circle[0].style.msTransform     = 'rotate('+deg+'deg) '; 
+                circle[0].style.oTransform      = 'rotate('+deg+'deg) '; 
+                circle[0].style.transform       = 'rotate('+deg+'deg) '; 
+
+                circle[1].style.transform       = 'rotate('+_deg+'deg) '; 
+                circle[1].style.mozTransform    = 'rotate('+_deg+'deg)'; 
+                circle[1].style.msTransform     = 'rotate('+_deg+'deg) '; 
+                circle[1].style.oTransform      = 'rotate('+_deg+'deg) '; 
+                circle[1].style.transform       = 'rotate('+_deg+'deg) '; 
+
+                circle[2].style.transform       = 'rotate('+deg+'deg) '; 
+                circle[2].style.mozTransform    = 'rotate('+deg+'deg)'; 
+                circle[2].style.msTransform     = 'rotate('+deg+'deg) '; 
+                circle[2].style.oTransform      = 'rotate('+deg+'deg) '; 
+                circle[2].style.transform       = 'rotate('+deg+'deg) '; 
+
+                circle[3].style.transform       = 'rotate('+_deg+'deg) '; 
+                circle[3].style.mozTransform    = 'rotate('+_deg+'deg)'; 
+                circle[3].style.msTransform     = 'rotate('+_deg+'deg) '; 
+                circle[3].style.oTransform      = 'rotate('+_deg+'deg) '; 
+                circle[3].style.transform       = 'rotate('+_deg+'deg) '; 
+
+                
+                circle[4].style.transform       = 'rotate('+deg+'deg) '; 
+                circle[4].style.mozTransform    = 'rotate('+deg+'deg)'; 
+                circle[4].style.msTransform     = 'rotate('+deg+'deg) '; 
+                circle[4].style.oTransform      = 'rotate('+deg+'deg) '; 
+                circle[4].style.transform       = 'rotate('+deg+'deg) '; 
+
+                circle[5].style.transform       = 'rotate('+_deg+'deg) '; 
+                circle[5].style.mozTransform    = 'rotate('+_deg+'deg)'; 
+                circle[5].style.msTransform     = 'rotate('+_deg+'deg) '; 
+                circle[5].style.oTransform      = 'rotate('+_deg+'deg) '; 
+                circle[5].style.transform       = 'rotate('+_deg+'deg) '; 
+                deg < -36000 ? deg = 0: deg=deg-num
+                _deg > 36000 ? _deg = 0: _deg=_deg+num
+                
+            }
+            xoayCircle()
+            setInterval(xoayCircle,8000)
+
+            let test = document.getElementsByClassName('test')[0]
+            $(test).attr({
+                "name":"wmode" 
+            })
+            $(test).attr({
+                "value":"transparent"
+            })
+        })
+    </script>  
+</body>
+</html>
